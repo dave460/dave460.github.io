@@ -79,7 +79,7 @@
           <div class="heading">
             <h2>Who am I?</h2>
             <div class="border"></div>
-            <p>I'm a <span id="age">unknown</span> years old Buyer from Oradea, Romania.</p>
+            <p>I'm a <span id="age">35</span> years old Buyer from Oradea, Romania.</p>
           </div>
           <div class="row">
             <div class="col-lg-4 service animated hiding" data-animation="fadeInUp" data-delay="300">
@@ -452,7 +452,7 @@
 	var now = new Date();
 	var difference = now - birth;
 	// Dates are set from 1970, so remove that to get the year 
-	// var age = new Date(difference).getFullYear() - 1970
+	var age = new Date(difference).getFullYear() - 1970
 
 	var span = document.getElementById('age');
 	span.innerHTML = age;
