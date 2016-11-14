@@ -77,9 +77,9 @@
       <div class="container">
         <div class="content text-center">
           <div class="heading">
-            <h2>What we love doing.</h2>
+            <h2>Who am I?</h2>
             <div class="border"></div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, alias enim placeat earum quos ab.</p>
+            <p>I'm a <span id="age">unknown</span> years old Buyer from Oradea, Romania.</p>
           </div>
           <div class="row">
             <div class="col-lg-4 service animated hiding" data-animation="fadeInUp" data-delay="300">
@@ -447,5 +447,15 @@
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
       ga('create','UA-25089888-9');ga('send','pageview');
     </script>
+	<script type="text/javascript">
+	var birth = new Date('1981-09-20');
+	var now = new Date();
+	var difference = now - birth;
+	// Dates are set from 1970, so remove that to get the year 
+	// var age = new Date(difference).getFullYear() - 1970
+
+	var span = document.getElementById('age');
+	span.innerHTML = age;
+	</script>
   </body>
 </html>
