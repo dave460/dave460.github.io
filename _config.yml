@@ -1,0 +1,18 @@
+title: Your Site Title
+description: A description of your site
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://dave460.github.io" # the base hostname & protocol for your site
+
+# Exclude from processing.
+exclude:
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+
+# Include the following files.
+include:
+  - _pages
+
+# Build settings.
+markdown: kramdown
+theme: minima
